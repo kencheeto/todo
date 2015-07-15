@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./dist/todo.css">
+  </head>
+  <body>
+    <header>
+      <div class="add-project">
+        <button class="add-project__button">add project</button>
+        <input class="add-project__input"/>
+      </div>
+      <div>
+        <p class="total__header">TOTAL</p>
+        <div class="total">
+          <p class="global-total">12</p>
+          <p>PROJECTS</p>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="column">
+        <div class="column__header">
+          <p class="column__label">To do</p>
+          <div class="total">
+            <p class="todo-total">4</p>
+            <p>PROJECTS</p>
+          </div>
+        </div>
+        <ul id="todo" class="column__list">
+          <li class="column__listitem">Project 1</li>
+          <li class="column__listitem">Project 2</li>
+          <li class="column__listitem">Project 3</li>
+          <li class="column__listitem">Project 4</li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="column__header">
+          <p class="column__label">In Progress</p>
+          <div class="total">
+            <p class="wip-total">3</p>
+            <p>PROJECTS</p>
+          </div>
+        </div>
+        <ul id="wip" class="column__list">
+          <li class="column__listitem">Project 5</li>
+          <li class="column__listitem">Project 6</li>
+          <li class="column__listitem">Project 7</li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="column__header">
+          <p class="column__label">Done</p>
+          <div class="total">
+            <p class="done-total">5</p>
+            <p>PROJECTS</p>
+          </div>
+        </div>
+        <ul id="done" class="column__list">
+          <li class="column__listitem">Project 8</li>
+          <li class="column__listitem">Project 9</li>
+          <li class="column__listitem">Project 10</li>
+          <li class="column__listitem">Project 11</li>
+          <li class="column__listitem">Project 12</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/Sortable/Sortable.js"></script>
+    <script src="./dist/todo.js"></script>
+  </body>
+</html>
