@@ -1,17 +1,13 @@
 // keep the totals updated
 'use strict';
 
-function updateGlobalTotal() {
-  $('.global-total').text($('li').length);
-}
-
 function updateTotals() {
   ['todo', 'wip', 'done'].forEach(function (column) {
     var columnTotal = $('#' + column + ' li').length;
     $('.' + column + '-total').text(columnTotal);
   });
 
-  updateGlobalTotal();
+  $('.global-total').text($('li').length);
 }
 
 /*
@@ -43,12 +39,6 @@ Object.keys(columns).forEach(function (columnName) {
   });
 });
 
-$('.add-project__button').click(function () {
-  // should be able to add a task by clicking 'add project'
-  // which brings up an input next to the button.
-  $('.add-project__input').show();
-});
-
 // type the task name into the input
 $('.add-project__input').keyup(function (e) {
   if (e.keyCode === 13 /* aka Enter */ && this.value.length > 0) {
@@ -56,9 +46,5 @@ $('.add-project__input').keyup(function (e) {
     $('#todo').append('<li class="column__listitem">' + this.value + '</li>');
     updateTotals();
     this.value = '';
-    // and the input hides
-    $(this).hide();
   }
 });
-
-// let's keep the total boxes updated

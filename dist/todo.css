@@ -19,22 +19,11 @@ header {
       -ms-flex-align: baseline;
           align-items: baseline; }
 
-.add-project__button {
-  background-color: black;
-  color: white;
-  border: 1px white;
-  border-radius: 4px;
-  padding: 0.5rem;
-  box-shadow: inset 0 1rem #4f4f4f; }
+.add-project__label {
+  padding: 0.5rem; }
 
 .add-project__input {
-  margin-left: 1rem;
-  display: none; }
-
-.total__header {
-  margin: 0;
-  font-size: 1rem;
-  text-align: center; }
+  margin-left: 1rem; }
 
 .total {
   float: right;
@@ -52,6 +41,11 @@ header {
   .total p:last-child {
     color: gray;
     font-size: 0.7rem; }
+
+.total__header {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center; }
 
 .container {
   display: -webkit-box;
